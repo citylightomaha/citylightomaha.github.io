@@ -1,0 +1,13 @@
+name: City Light Family
+description: Something something city light family
+keywords: city,light,family
+author: City Light
+author_email: communications@citylightomaha.org
+url: http://citylightomaha.github.io/
+permalink: pretty
+
+markdown: kramdown
+
+sass:
+  style: compressed
+  sass_dir: _sass

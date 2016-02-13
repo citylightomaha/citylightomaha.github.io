@@ -1,0 +1,6 @@
+Gemfile.lock
+jsconfig.json
+
+_site/
+node_modules/
+.sass-cache/
