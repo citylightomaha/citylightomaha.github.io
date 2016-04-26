@@ -41,3 +41,78 @@ nav {
     text-transform: uppercase;
   }
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  text-align: center;
+}
+
+section {
+  padding: 5rem 0;
+
+  p {
+    margin: 0;
+  }
+  
+  img {
+    width: 100%;
+  }
+}
+
+section.primary {
+  color: $tint;
+  background-color: $primary;
+}
+
+section.grey {
+  color: $tint;
+  background-color: $dark-grey;
+}
+
+.placeholder {
+  background-color: $tint;
+  color: $shade;
+  font-size: 2.5rem;
+  padding: 20rem 0;
+  text-align: center;
+}
+
+.wide-container {
+  @extend .container;
+  max-width: 1200px;
+}
+
+.mini-container {
+  @extend .container;
+  max-width: 667px;
+}
+
+.church-family {
+  .mini-container {
+    margin-top: 5rem;
+  }
+
+  h5 {
+    text-align: left;
+  }
+}
+
+.family-values {
+  h4 {
+    text-align: left;
+  }
+}
+
+.common-questions {
+  h4 {
+    text-align: left;
+  }
+
+  p {
+    margin-bottom: 2rem;
+    
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+}
