@@ -1,1 +1,43 @@
 @import "lib/normalize";
+@import "lib/skeleton";
+@import "lib/bourbon/bourbon";
+
+@import "partials/variables";
+@import "partials/skeleton-overrides";
+
+html {
+  background-color: $tint;
+  color: $shade;
+}
+
+nav {
+  ul {
+    list-style: none;
+    margin: 3rem 0;
+    text-align: center;
+  }
+  
+  li {
+    @include transition(all 0.3s ease);
+
+    display: inline;
+    font-size: 2rem;
+    margin: 0 0.5rem;
+    padding: 1.5rem;
+    border-radius: 5px;
+    
+    &:hover {
+      background-color: darken($tint, 3%);
+      
+      a {
+        color: lighten($shade, 10%);
+      }
+    }
+  }
+  
+  a {
+    color: $shade;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
