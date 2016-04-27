@@ -1,0 +1,31 @@
+html {
+  background-color: $tint;
+  color: $shade;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  
+  &.center {
+    text-align: center;
+  }
+}
+
+a {
+  @include transition(all 0.3s ease);
+  color: $primary;
+  
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+.wide-container {
+  @extend .container;
+  max-width: 1200px;
+}
+
+.mini-container {
+  @extend .container;
+  max-width: 667px;
+}

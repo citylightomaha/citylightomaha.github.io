@@ -7,19 +7,6 @@
 @import "partials/nav";
 @import "partials/footer";
 
-html {
-  background-color: $tint;
-  color: $shade;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 500;
-  
-  &.center {
-    text-align: center;
-  }
-}
-
 section {
   padding: 5rem 0;
 
@@ -60,16 +47,6 @@ section.grey {
   font-size: 2.5rem;
   padding: 20rem 0;
   text-align: center;
-}
-
-.wide-container {
-  @extend .container;
-  max-width: 1200px;
-}
-
-.mini-container {
-  @extend .container;
-  max-width: 667px;
 }
 
 .church-family {
