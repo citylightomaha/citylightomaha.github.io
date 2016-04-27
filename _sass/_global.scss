@@ -14,14 +14,21 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
-  text-align: center;
+  
+  &.center {
+    text-align: center;
+  }
 }
 
 section {
   padding: 5rem 0;
 
   p {
-    margin: 0;
+    margin-bottom: 2rem;
+    
+    &:last-of-type {
+      margin: 0;
+    }
   }
   
   img {
@@ -37,6 +44,14 @@ section.primary {
 section.grey {
   color: $tint;
   background-color: $dark-grey;
+}
+
+.section-wrap {
+  margin-bottom: 5rem;
+  
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .placeholder {
@@ -64,25 +79,5 @@ section.grey {
 
   h5 {
     text-align: left;
-  }
-}
-
-.family-values {
-  h4 {
-    text-align: left;
-  }
-}
-
-.common-questions {
-  h4 {
-    text-align: left;
-  }
-
-  p {
-    margin-bottom: 2rem;
-    
-    &:last-of-type {
-      margin: 0;
-    }
   }
 }
