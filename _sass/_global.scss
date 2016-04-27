@@ -21,21 +21,21 @@ section {
   img {
     width: 100%;
   }
-}
 
-section.primary {
-  color: $tint;
-  background-color: $primary;
-}
+  &.primary {
+    color: $tint;
+    background-color: $primary;
+  }
 
-section.light-grey {
-  color: $shade;
-  background-color: $light-grey;
-}
-
-section.grey {
-  color: $tint;
-  background-color: $dark-grey;
+  &.light-grey {
+    color: $shade;
+    background-color: $light-grey;
+  }
+  
+  &.grey {
+    color: $tint;
+    background-color: $dark-grey;
+  }
 }
 
 .section-wrap {
