@@ -20,6 +20,14 @@ a {
   }
 }
 
+@media (min-width: 400px) {
+  .container {
+    .column, .columns {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
 .wide-container {
   @extend .container;
   max-width: 1200px;

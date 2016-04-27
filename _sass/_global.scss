@@ -28,6 +28,11 @@ section.primary {
   background-color: $primary;
 }
 
+section.light-grey {
+  color: $shade;
+  background-color: $light-grey;
+}
+
 section.grey {
   color: $tint;
   background-color: $dark-grey;
@@ -49,6 +54,11 @@ section.grey {
   text-align: center;
 }
 
+.mini-placeholder {
+  @extend .placeholder;
+  padding: 10rem 0;
+}
+
 .church-family {
   .mini-container {
     margin-top: 5rem;
@@ -56,5 +66,11 @@ section.grey {
 
   h5 {
     text-align: left;
+  }
+}
+
+.core-values {
+  .row h6 {
+    margin-top: 5rem;
   }
 }
