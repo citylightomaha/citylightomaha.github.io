@@ -1,0 +1,33 @@
+footer {
+  background-color: $medium-grey;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 3rem 0;
+    text-align: center;
+  }
+  
+  li {
+    @include transition(all 0.3s ease);
+
+    display: inline;
+    font-size: 2rem;
+    margin: 0 0.5rem;
+    padding: 1.2rem;
+    border-radius: 5px;
+    
+    &:hover {
+      background-color: lighten($medium-grey, 4%);
+      
+      a {
+        color: lighten($shade, 10%);
+      }
+    }
+  }
+  
+  a {
+    color: $shade;
+    text-decoration: none;
+  }
+}

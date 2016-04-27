@@ -4,42 +4,12 @@
 
 @import "partials/variables";
 @import "partials/skeleton-overrides";
+@import "partials/nav";
+@import "partials/footer";
 
 html {
   background-color: $tint;
   color: $shade;
-}
-
-nav {
-  ul {
-    list-style: none;
-    margin: 3rem 0;
-    text-align: center;
-  }
-  
-  li {
-    @include transition(all 0.3s ease);
-
-    display: inline;
-    font-size: 2rem;
-    margin: 0 0.5rem;
-    padding: 1.5rem;
-    border-radius: 5px;
-    
-    &:hover {
-      background-color: darken($tint, 3%);
-      
-      a {
-        color: lighten($shade, 10%);
-      }
-    }
-  }
-  
-  a {
-    color: $shade;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
 }
 
 h1, h2, h3, h4, h5, h6 {
