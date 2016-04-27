@@ -1,7 +1,17 @@
 nav {
+  .nav-logo {
+    display: block;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  img {
+    height: 12rem;
+  }
+  
   ul {
     list-style: none;
-    margin: 3rem 0;
+    margin: 1rem 0 3rem;
     text-align: center;
   }
   
@@ -13,19 +23,19 @@ nav {
     margin: 0 0.5rem;
     padding: 1.5rem;
     border-radius: 5px;
-    
-    &:hover {
-      background-color: darken($tint, 4%);
-      
-      a {
-        color: lighten($shade, 10%);
-      }
-    }
   }
   
   a {
     color: $shade;
     text-decoration: none;
     text-transform: uppercase;
+    
+    &:hover {
+      color: lighten($shade, 10%);
+      
+      li {
+        background-color: darken($tint, 4%);
+      }
+    }
   }
 }

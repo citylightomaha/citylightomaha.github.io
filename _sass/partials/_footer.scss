@@ -16,18 +16,18 @@ footer {
     margin: 0 0.5rem;
     padding: 1.2rem;
     border-radius: 5px;
-    
-    &:hover {
-      background-color: lighten($medium-grey, 4%);
-      
-      a {
-        color: lighten($shade, 10%);
-      }
-    }
   }
   
   a {
     color: $shade;
     text-decoration: none;
+    
+    &:hover {
+      color: lighten($shade, 10%);
+      
+      li {
+        background-color: lighten($medium-grey, 4%);
+      }
+    }
   }
 }
