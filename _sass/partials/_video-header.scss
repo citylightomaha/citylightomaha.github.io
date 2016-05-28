@@ -1,25 +1,47 @@
-.fullscreen-bg {
+.video {
   height: 60rem;
   overflow: hidden;
-}
-
-.fullscreen-bg__video {
-  @include transform(translate(0,-120px));
-  display: block;
-  position: relative;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  min-height: 100%;
-  min-width: 100%;
-  height: auto;
-  width: auto;
-  z-index: -1;
+  
+  video {
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    min-height: 100%;
+    min-width: 100%;
+    height: auto;
+    width: auto;
+    z-index: -1;
+  }
 }
 
 .video-filter {
-  background-color: rgba(246,141,46,0.3);
+  background-color: rgba(246,141,46,0.4);
   height: 100%;
+  position: relative;
   width: 100%;
+}
+
+.vide-overlay-container {
+  position: absolute;
+  text-align: center;
+  top: 6rem;
+  width: 100%;
+
+  .video-overlay {
+    @include transform(skew(-10deg));
+    color: $tint;
+    background-color: $shade;
+    display: inline-block;
+    padding: 2rem 4rem;
+    
+    h1 {
+      @include transform(skew(10deg));
+      font-size: 6rem;
+      font-weight: 900;
+      margin: 0;
+    }
+  }
 }

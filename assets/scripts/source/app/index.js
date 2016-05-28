@@ -1,5 +1,5 @@
 var $ = require('jquery');
 
 $(function() {
-  console.log('index ready');
+  console.log('Home Ready');
 });
