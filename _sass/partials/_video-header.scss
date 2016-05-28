@@ -1,10 +1,16 @@
 .fullscreen-bg {
-  min-height: 60rem;
+  height: 60rem;
   overflow: hidden;
 }
 
 .fullscreen-bg__video {
+  @include transform(translate(0,-120px));
   display: block;
+  position: relative;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
   min-height: 100%;
   min-width: 100%;
   height: auto;
