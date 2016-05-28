@@ -1,0 +1,13 @@
+.fullscreen-bg {
+  min-height: 60rem;
+  overflow: hidden;
+}
+
+.fullscreen-bg__video {
+  display: block;
+  min-height: 100%;
+  min-width: 100%;
+  height: auto;
+  width: auto;
+  z-index: -1;
+}

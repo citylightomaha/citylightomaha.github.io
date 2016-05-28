@@ -3,4 +3,5 @@ jsconfig.json
 
 _site/
 node_modules/
+bower_components/
 .sass-cache/

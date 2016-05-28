@@ -1,0 +1,22 @@
+{
+  "name": "citylightomaha",
+  "description": "City Light Family Website",
+  "main": "index.js",
+  "authors": [
+    "Mitchel Pigsley <mpigsley@gmail.com> (http://mitchelpigsley.com/)"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/citylightomaha/citylightomaha.github.io",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4"
+  }
+}
