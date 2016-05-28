@@ -3,7 +3,6 @@ nav .nav-container {
   @include flex-direction(row);
   @include align-items(center);
   @include justify-content(space-between);
-  
 
   .nav-logo {
     margin: 1.5rem 0;
@@ -13,7 +12,25 @@ nav .nav-container {
   img {
     height: 7rem;
   }
+}
+
+.sub-nav {
+  background-color: $light-grey;
   
+  .sub-nav-container {
+    text-align: center;
+    
+    ul {
+      display: inline-block;
+  
+      a:hover li {
+        background-color: lighten($light-grey, 4%);
+      }
+    }
+  }
+}
+
+nav, .sub-nav {
   ul {
     list-style: none;
     margin: 2rem 0;
