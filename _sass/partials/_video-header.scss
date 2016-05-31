@@ -31,17 +31,21 @@
   width: 100%;
 
   .video-overlay {
-    @include transform(skew(-10deg));
     color: $tint;
-    /*background-color: $shade;*/
     display: inline-block;
     padding: 2rem 4rem;
     
     h1 {
-      @include transform(skew(10deg));
       font-size: 6rem;
       font-weight: 900;
       margin: 0;
+      text-transform: uppercase;
+    }
+    
+    p {
+      font-size: 2rem;
+      font-weight: 500;
+      margin: 2rem 0;
     }
   }
 }

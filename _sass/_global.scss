@@ -12,6 +12,21 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
+  background-color: $primary;
+  border-color: $primary;
+  
+  &:hover {
+    background-color: darken($primary, 10%);
+    border-color: darken($primary, 10%);
+  }
+}
+
 section {
   padding: 5rem 0;
 
