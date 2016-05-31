@@ -45,3 +45,11 @@ nav {
     }
   }
 }
+
+
+@media (max-width: 550px) {
+  nav a {
+    display: block;
+    padding: 0.4rem 0;
+  }
+}
