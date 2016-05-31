@@ -10,27 +10,11 @@ nav .nav-container {
   }
 
   img {
-    height: 7rem;
+    height: 5rem;
   }
 }
 
-.sub-nav {
-  background-color: $light-grey;
-  
-  .sub-nav-container {
-    text-align: center;
-    
-    ul {
-      display: inline-block;
-  
-      a:hover li {
-        background-color: lighten($light-grey, 4%);
-      }
-    }
-  }
-}
-
-nav, .sub-nav {
+nav {
   ul {
     list-style: none;
     margin: 2rem 0;
