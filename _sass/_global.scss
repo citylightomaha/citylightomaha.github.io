@@ -101,7 +101,22 @@ section {
 
 .church-family {
   h5 {
+    font-size: 2rem;
     text-align: left;
+    text-transform: uppercase;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  a {
+    color: $tint;
+    text-decoration: none;
+    
+    &:hover {
+      color: darken($tint, 5%)
+    }
   }
 }
 
