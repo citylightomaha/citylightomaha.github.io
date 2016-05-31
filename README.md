@@ -28,5 +28,5 @@ You'll want to run the `gulp` and `jekyll serve` commands in unison.
 
 # ffmpeg Installation and Video Compression
 1. `brew install ffmpeg --with-fdk-aac`
-2. Compression: `ffmpeg -i header-high.mp4 -codec:v libx264 -profile:v high -preset slow -b:v 500k -maxrate 500k -bufsize 1000k -vf scale=-1:720 -threads 0 -codec:a libfdk_aac -b:a 128k header-low.mp4`
-3. Create Poster Image: `ffmpeg -i header-low.mp4 -ss 0 -vframes 1 ../images/header-poster.jpg`
+2. Compression: `ffmpeg -i assets/video/header-high.mp4 -codec:v libx264 -profile:v high -preset slow -b:v 850k -maxrate 850k -bufsize 1000k -vf scale=-1:720 -threads 0 -codec:a libfdk_aac -b:a 128k assets/video/header-low.mp4`
+3. Create Poster Image: `ffmpeg -i assets/video/header-low.mp4 -ss 0 -vframes 1 assets/images/header-poster.jpg`
